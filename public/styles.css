@@ -4,6 +4,23 @@ html {
     font-family: 'Varela Round', sans-serif;
 }
 
+/***************************************************** NAV-BAR *****************************************************/
 
+#hamburger-menu {
+	display: none;
+}
 
+/***************************************************** MOBILE *****************************************************/
+
+@media screen and (max-width: 768px) {
+
+	#hamburger-menu {
+		display: block !important;
+	}
+
+	#desktop-nav {
+		display: none !important;
+	}
+
+}
 
