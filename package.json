@@ -1,7 +1,7 @@
 {
   "name": "scripts",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is an on-going project for SkateTherapy, an organization I do volunteer work for. SkateTherapy is an ice skating program for children with disabilities. We give them mostly one-on-one skating lessons with experienced ice skaters. The environment is fun, positive, and a great social outlet!",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,5 +17,14 @@
     "nodemon": "^2.0.2",
     "uuid": "^3.3.3",
     "uuidv1": "^1.6.14"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Selenestica/skate-therapy-website-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Selenestica/skate-therapy-website-node/issues"
+  },
+  "homepage": "https://github.com/Selenestica/skate-therapy-website-node#readme"
 }
