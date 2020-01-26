@@ -1,11 +1,13 @@
 /***************************************************** GLOBAL CODE *****************************************************/
 
 html {
-    font-family: 'Varela Round', sans-serif;
+	font-family: 'Varela Round', sans-serif;
+	scroll-behavior: smooth;
 }
 
 #main-container {
 	max-width: 1350px;
+	border: 1px solid black;
 }
 
 
@@ -56,19 +58,21 @@ html {
 	bottom: 0;
 	z-index: 1;
 	display: flex;
+	max-width: 35rem;
+	max-height: 23rem;
 }
 
 #h1-overlay-text {
 	color: white;
 	background-color: rgba(65, 65, 65, 0.5);
+	padding: 1rem;
 }
 
 #a-overlay {
 	font-size: 1.3rem;
-	background-color: #ffc107;
+	background-color: rgba(255, 193, 7, 0.7);
 	color: black;
-	padding: 1rem 3rem 1rem 3rem;
-	border-radius: 2rem;
+	padding: 1rem 7.77rem 1rem 1rem;
 }
 
 #a-overlay:hover {
@@ -76,6 +80,10 @@ html {
 }
 
 /***************************************************** LOCATIONS *****************************************************/
+
+#locations-div {
+	background-color: antiquewhite;
+}
 
 .title-divs {
 	text-align: center;
@@ -102,7 +110,23 @@ html {
 	margin-top: 0.7rem;
 }
 
-/***************************************************** MOBILE *****************************************************/
+/***************************************************** MEDIA QUERIES *****************************************************/
+
+@media screen and (min-width: 901px) {
+
+	#carousel-overlay-div {
+		align-content: space-around;
+	}
+
+	#h1-overlay-div {
+		max-height: 0rem;
+	}
+	
+	#a-overlay-div {
+		max-height: 0rem;
+	}
+
+}
 
 @media screen and (max-width: 900px) {
 
@@ -112,6 +136,18 @@ html {
 
 	#desktop-nav {
 		display: none !important;
+	}
+
+	.carousel-overlay {
+		max-height: 6.6rem;
+	}
+
+	#h1-overlay-text {
+		font-size: 1.9rem;
+	}
+	
+	#a-overlay {
+		font-size: 0.7rem;
 	}
 
 }
