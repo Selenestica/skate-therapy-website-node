@@ -4,15 +4,107 @@ html {
     font-family: 'Varela Round', sans-serif;
 }
 
+#main-container {
+	max-width: 1350px;
+}
+
+
 /***************************************************** NAV-BAR *****************************************************/
 
 #hamburger-menu {
 	display: none;
 }
 
+#top-nav-div {
+	justify-content: flex-end;
+}
+
+.top-nav-links {
+	text-align: end;
+	color: white;
+	margin: 1rem;
+}
+
+.top-nav-links:hover {
+	text-decoration: none;
+}
+
+#bottom-nav-div {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+#bottom-nav-links-div {
+	text-align: end;
+	margin-top: 3rem;
+}
+
+.bottom-nav-links {
+	margin: 1rem;
+	font-size: 1.4rem;
+}
+
+.bottom-nav-links:hover {
+	text-decoration: none;
+}
+
+/***************************************************** CAROUSEL *****************************************************/
+
+.carousel-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+	display: flex;
+}
+
+#h1-overlay-text {
+	color: white;
+	background-color: rgba(65, 65, 65, 0.5);
+}
+
+#a-overlay {
+	font-size: 1.3rem;
+	background-color: #ffc107;
+	color: black;
+	padding: 1rem 3rem 1rem 3rem;
+	border-radius: 2rem;
+}
+
+#a-overlay:hover {
+	text-decoration: none;
+}
+
+/***************************************************** LOCATIONS *****************************************************/
+
+.title-divs {
+	text-align: center;
+}
+
+.h1-title-text {
+	font-size: 5rem;
+}
+
+.location-imgs {
+	max-width: 259px;
+	height: auto;
+}
+
+.location-div-col {
+	text-align: center;
+}
+
+#aerodrome-location-link {
+	margin-top: 1.6rem;
+}
+
+#sugarland-location-link {
+	margin-top: 0.7rem;
+}
+
 /***************************************************** MOBILE *****************************************************/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
 
 	#hamburger-menu {
 		display: block !important;
@@ -20,6 +112,14 @@ html {
 
 	#desktop-nav {
 		display: none !important;
+	}
+
+}
+
+@media screen and (max-width: 680px) {
+
+	.h1-title-text {
+		font-size: 3.5rem;
 	}
 
 }
